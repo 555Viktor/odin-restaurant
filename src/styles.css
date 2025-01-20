@@ -66,8 +66,8 @@ body {
     margin: 0 auto;
     padding-block: 1.6rem;
 
-    border: 4px solid rgba(11, 25, 44, 0.2);
-    border-radius: 60px;
+    border: 4px solid rgba(11, 25, 44, 0.1);
+    border-radius: 12px;
 
     background: rgba(11, 25, 44, 0.8);
 }
@@ -79,6 +79,10 @@ body {
 
 #home-headers .head-slogan {
     color: #FAF9F6;
+}
+
+#home-headers h2.head-slogan {
+    font-style: italic;
 }
 
 #home-headers > * {
@@ -97,3 +101,33 @@ body {
     color: #FAF9F6;
     cursor: pointer;
 }
+
+/* Contact page styling */
+
+
+#contact-page {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 80px);
+    gap: 8px;
+
+    margin-inline: 3rem;
+}
+    
+.contact-details {
+    grid-column: span 12 / span 12;
+}
+
+.contact-form {
+    grid-column: span 8 / span 8;
+    grid-row: span 5 / span 5;
+    grid-row-start: 2;
+}
+
+.map-container {
+    grid-column: span 4 / span 4;
+    grid-row: span 5 / span 5;
+    grid-column-start: 9;
+    grid-row-start: 2;
+}
+        

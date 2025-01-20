@@ -1,6 +1,6 @@
 import "./styles.css";
 import {createHomePage} from "./home-page";
 
-let contentDiv = document.getElementById('content');
+const contentDiv = document.getElementById('content');
 
-contentDiv.appendChild(createHomePage());
+// contentDiv.appendChild(createHomePage());
