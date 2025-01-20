@@ -16,6 +16,10 @@ body,
 body {
     min-height: 100vh;
     flex-direction: column;
+
+    background: url('./assets/restaurant-background.webp');
+    background-size: cover;   /* Optional: to cover the whole screen */
+    background-position: center;  /* Optional: centers the image */
 }
 
 /* Nav styling */
@@ -39,6 +43,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    color: white;
 }
 
 #home-headers {
