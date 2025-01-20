@@ -1,9 +1,32 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-};
+}
+
+/* Flex containers */
+body,
+#nav,
+#nav-list {
+    display: flex;
+}
+/* -------------- */
 
 body {
     min-height: 100vh;
-};
+    flex-direction: column;
+}
+
+#nav {
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#nav-list {
+    list-style-type: none;
+    gap: 1rem;
+}
+
+#nav-list .nav-btn {
+    padding: 0.5rem;
+}
