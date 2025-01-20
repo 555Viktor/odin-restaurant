@@ -1,4 +1,4 @@
-// Function to create the home page container
+// Create the home page container
 function createHomeContainer() {
     const homePageContainer = document.createElement('div');
     homePageContainer.id = 'home-page';
@@ -6,6 +6,7 @@ function createHomeContainer() {
     return homePageContainer;
 }
 
+// Create the container for header elements
 function createHomeHeadersContainer () {
     const homeHeadersContainer = document.createElement('div');
     homeHeadersContainer.id = 'home-headers';
@@ -13,6 +14,7 @@ function createHomeHeadersContainer () {
     return homeHeadersContainer;
 }
 
+// Create the headers and append them to home-headers container
 function createHomeHeaders () {
     const headersContainer = createHomeHeadersContainer();
 
@@ -42,9 +44,45 @@ function createHomeHeaders () {
     return headersContainer;
 };
 
+/* <div id="home-btns">
+<button class="home-btn-menu">Our menu</button>
+<button class="home-btn-contact">Get in touch</button>
+</div> */
+
+// Create the container for home page buttons
+function createHomeButtonsContainer (){
+    const homeButtonsContainer = document.createElement('div');
+    homeButtonsContainer.id = 'home-btns';
+
+    return homeButtonsContainer;
+}
+
+// Create the buttons and append them to home-btns container
+function createHomeButtons () {
+    const homeBtnsContainer = createHomeButtonsContainer();
+
+    const menuButton = document.createElement('button');
+    const menuButtonText = 'Our menu';
+    menuButton.classList.add('home-btn-menu');
+    menuButton.textContent = menuButtonText;
+
+    const contactButton = document.createElement('button');
+    const contactButtonText = 'Get in touch';
+    contactButton.classList.add('home-btn-contact');
+    contactButton.textContent = contactButtonText;
+
+    homeBtnsContainer.appendChild(menuButton);
+    homeBtnsContainer.appendChild(contactButton);
+
+    return homeBtnsContainer;
+}
+
+// Create home page view
 export function createHomePage () {
     const homeContainer = createHomeContainer();
 
     homeContainer.appendChild(createHomeHeaders());
+    homeContainer.appendChild(createHomeButtons());
+
     return homeContainer;
 };
