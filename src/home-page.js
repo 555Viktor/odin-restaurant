@@ -1,3 +1,5 @@
+import {loadMenuPage, loadContactPage, clearContentContainer} from '../src/index';
+
 // Create the home page container
 function createHomeContainer() {
     const homePageContainer = document.createElement('div');
@@ -61,10 +63,20 @@ function createHomeButtons () {
     menuButton.classList.add('home-btn-menu');
     menuButton.textContent = menuButtonText;
 
+    menuButton.addEventListener('click', () => {
+        clearContentContainer();
+        loadMenuPage();
+    });
+
     const contactButton = document.createElement('button');
     const contactButtonText = 'Get in touch';
     contactButton.classList.add('home-btn-contact');
     contactButton.textContent = contactButtonText;
+
+    contactButton.addEventListener('click', () => {
+    clearContentContainer()
+    loadContactPage();
+})
 
     homeBtnsContainer.appendChild(menuButton);
     homeBtnsContainer.appendChild(contactButton);

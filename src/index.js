@@ -3,6 +3,8 @@ import {createHomePage} from "./home-page";
 import {createContactPage} from "./contact-page";
 import {createMenuPage} from "./menu-page";
 
+export {loadMenuPage, loadContactPage, clearContentContainer};
+
 const contentDiv = document.getElementById('content');
 
 const navHomeBtn = document.querySelector('.nav-btn-home');
@@ -26,6 +28,7 @@ function loadContactPage () {
     contentDiv.appendChild(createContactPage());
 };
 
+
 navHomeBtn.addEventListener('click', () => {
     clearContentContainer()
     loadHomePage()
@@ -41,4 +44,4 @@ navContactBtn.addEventListener('click', () => {
     loadContactPage();
 })
 
-window.onload(loadHomePage());
+loadHomePage()
