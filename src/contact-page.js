@@ -1,3 +1,5 @@
+import mapImageSrc from './assets/restaurant-map.jpg';
+
 // Container for contact page
 function createContactPageContainer () {
     const contactPageContainer = document.createElement('div');
@@ -15,7 +17,7 @@ function createContactDetailsContainer () {
 }
 
 // Function to fill contact details with respective elements
-function fillContactDetailsContainer () {
+function fillContactDetailsContainerEls () {
     let contactDetailsContainer = createContactDetailsContainer();
 
     const headerLogo = document.createElement('h2');
@@ -116,32 +118,30 @@ function fillContactFormEls () {
     return contactForm;
 }
 
+// Function to create map container
+function createMapContainer () {
+    const mapContainer = document.createElement('div');
+    mapContainer.classList.add('contact-map');
+
+    return mapContainer;
+}
+
+function fillMapContainerEls () {
+    const mapContainer = createMapContainer();
+
+    const mapImageEl = document.createElement('img');
+    mapImageEl.src = mapImageSrc;
+
+    mapContainer.appendChild(mapImageEl);
+    return mapContainer;
+}
+
 // Function to load entire contact page
 export function createContactPage () {
     const contactPageContainer = createContactPageContainer();
 
-    contactPageContainer.appendChild(fillContactDetailsContainer());
+    contactPageContainer.appendChild(fillContactDetailsContainerEls());
     contactPageContainer.appendChild(fillContactFormEls());
+    contactPageContainer.appendChild(fillMapContainerEls());
     return contactPageContainer;
 }
-
-
-/* <form action="" class="contact-form">
-<h2>Contact Us for Reservations or Inquiries</h2>
-<div class="form-field form-name">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" placeholder="What's your name?" required>
-</div>
-
-<div class="form-field form-email">
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" placeholder="Your email (e.g., name@example.com)" required>
-</div>
-
-<div class="form-field form-message">
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="4" placeholder = "Your message goes here" required></textarea>
-</div>
-
-<button class="form-btn" type="submit">Send</button>
-</form> */

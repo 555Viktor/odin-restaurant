@@ -38,7 +38,7 @@ body {
 
 /* Nav styling */
 #nav {
-    height: 20vh;
+    height: 18vh;
     justify-content: space-between;
     padding: 1rem;
 }
@@ -116,7 +116,7 @@ body {
 
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(6, 80px);
+    grid-template-rows: repeat(6, 88px);
     gap: 8px;
 }
 

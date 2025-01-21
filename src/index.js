@@ -4,4 +4,4 @@ import {createContactPage} from "./contact-page";
 const contentDiv = document.getElementById('content');
 
 // contentDiv.appendChild(createHomePage());
-contentDiv.appendChild(createContactPage());
+// contentDiv.appendChild(createContactPage());
