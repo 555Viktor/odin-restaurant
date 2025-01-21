@@ -25,11 +25,12 @@ function createCardImgContainer () {
 }
 
 // Create img inside cardImg container and return the container
-function createCardImg (imgSource) {
+function createCardImg (imgSource, imgAlt) {
     const cardImgContainer = createCardImgContainer();
 
     const cardImgEl = document.createElement('img');
     cardImgEl.src = imgSource;
+    cardImgEl.alt = imgAlt;
 
     cardImgContainer.appendChild(cardImgEl);
 
@@ -123,7 +124,7 @@ export function createMenuPage () {
 
         const menuItem = createMenuItemContainer();
         
-        const cardImg = createCardImg(item.img);
+        const cardImg = createCardImg(item.img, item.name);
         const cardContainer = fillCardContainerEls(item.name, item.description, item.price);
 
         menuItem.appendChild(cardImg);
