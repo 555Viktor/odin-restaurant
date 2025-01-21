@@ -1,3 +1,4 @@
+// Placeholder image for all menu items
 import menuPlaceholderImg from './assets/menu-placeholder.svg';
 
 // Create restaurant menu page container
