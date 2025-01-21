@@ -44,11 +44,6 @@ function createHomeHeaders () {
     return headersContainer;
 };
 
-/* <div id="home-btns">
-<button class="home-btn-menu">Our menu</button>
-<button class="home-btn-contact">Get in touch</button>
-</div> */
-
 // Create the container for home page buttons
 function createHomeButtonsContainer (){
     const homeButtonsContainer = document.createElement('div');
