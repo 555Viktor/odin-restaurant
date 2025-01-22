@@ -4,6 +4,9 @@
 :root {
     --yellow-text: #FFEB3B;
     --white-text: #FAF9F6;
+    --dark-background: rgba(11, 25, 44, 0.8);
+    --dark-background-lighter: rgba(94, 94, 94, 0.3);
+    --dark-background-lightest: rgba(11, 25, 44, 0.1);
 }
 
 * {
@@ -58,7 +61,7 @@ body {
 
     border: 2px solid var(--white-text);
     border-radius: 8px;
-    background: rgba(94, 94, 94, 0.3);
+    background: var(--dark-background-lighter);
 
     font-size: 1.2rem;
 
@@ -78,10 +81,10 @@ body {
     margin: 0 auto;
     padding-block: 1.6rem;
 
-    border: 4px solid rgba(11, 25, 44, 0.1);
+    border: 4px solid var(--dark-background-lightest);
     border-radius: 12px;
 
-    background: rgba(11, 25, 44, 0.8);
+    background:  var(--dark-background);
 }
 
 #home-headers {
@@ -106,7 +109,7 @@ body {
     padding: 0.6rem 1.2rem;
 
     border: 2px solid var(--yellow-text);
-    background: rgba(94, 94, 94, 0.3);
+    background: var(--dark-background-lighter);
 
     font-size: 1.2rem;
 
@@ -119,7 +122,7 @@ body {
 #menu-page {
     margin: 0 auto;
     width: 80%;
-    background: rgba(11, 25, 44, 0.8);
+    background: var(--dark-background);
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -161,7 +164,7 @@ body {
 
 #contact-page > div,
 #contact-page > form {
-    background: rgba(11, 25, 44, 0.8); 
+    background: var(--dark-background);
 }
     
 .contact-details {
@@ -222,7 +225,7 @@ body {
     padding: 0.2rem 0.4rem;
 
     border: 2px solid var(--white-text);
-    background: rgba(94, 94, 94, 0.3);
+    background: var(--dark-background-lighter);
 
     font-size: 1.2rem;
 
