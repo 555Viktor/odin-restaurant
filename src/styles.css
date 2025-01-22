@@ -17,7 +17,11 @@
 body,
 #nav,
 #nav-list,
-#home-page {
+#home-page,
+.contact-details,
+.contact-form,
+.form-field,
+.contact-map {
     display: flex;
 }
 /* -------------- */
@@ -163,7 +167,6 @@ body {
 .contact-details {
     grid-column: span 12 / span 12;
 
-    display: flex;
     justify-content: space-around;
     align-items: center;
 }
@@ -178,7 +181,6 @@ body {
     grid-row: span 5 / span 5;
     grid-row-start: 2;
 
-    display: flex;
     align-items: center;
     flex-direction: column;
 }
@@ -189,7 +191,6 @@ body {
 .contact-form .form-field {
     margin-block: 0.8rem;
 
-    display: flex;
     flex-direction: column;
 }
 
@@ -236,7 +237,6 @@ body {
     grid-column-start: 8;
     grid-row-start: 2;
 
-    display: flex;
     justify-content: center;
     align-items: center;
 }
