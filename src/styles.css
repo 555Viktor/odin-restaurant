@@ -78,6 +78,7 @@ body {
     transform: scale(1.05);
     transition: all 0.3s ease-in-out;
 }
+
 /* Home page styling */
 
 #home-page {
@@ -258,7 +259,6 @@ body {
     width: 96%;
 
     border-radius: 8px;
-    
     object-fit: cover;
 }
 
