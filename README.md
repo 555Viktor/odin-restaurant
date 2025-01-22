@@ -47,19 +47,7 @@ To set up this project locally, follow these steps:
    ```
 
 5. Open your browser and go to `http://localhost:8080` to view the page.
-
-## Usage  
-
-1. **Navigation:**  
-   - Use the navigation links to switch between Home, Menu, and Contact Us pages.
-   - Content loads dynamically without page reloads.
-
-2. **Responsive Design:**  
-   - The website adapts to various screen sizes, providing an optimal experience on both mobile and desktop devices.
-
-3. **Contact Form:**  
-   - Users can submit inquiries via the contact form, which includes basic validation.
-
+   
 ## Acknowledgements  
 This project was created as part of **The Odin Project** curriculum. A special thanks to **The Odin Project** for this valuable learning opportunity.
 
