@@ -1,6 +1,6 @@
 # Restaurant Page 🍽️
 
-[![Screenshot](src/assets/github-restaurant-preview.png)](https://555viktor.github.io/odin-restaurant/)
+[![Screenshot](src/assets/github-restaurant-preview.jpg)](https://555viktor.github.io/odin-restaurant/)
 
 ## Live Preview  
 Check out the deployed project here: [Live Preview](https://555viktor.github.io/odin-restaurant/) or click the image above.
