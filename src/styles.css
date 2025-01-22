@@ -69,6 +69,15 @@ body {
     cursor: pointer;
 }
 
+/* Shared button hover state */
+.nav-btn:hover, 
+.home-btn-menu:hover,
+.home-btn-contact:hover,
+.form-btn:hover {
+    background: var(--dark-background);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
 /* Home page styling */
 
 #home-page {
@@ -233,7 +242,7 @@ body {
     cursor: pointer;
 }
 
-/* ------------------- */
+/* Map component styling */
 .contact-map {
     grid-column: span 5 / span 5;
     grid-row: span 5 / span 5;
@@ -252,3 +261,4 @@ body {
     
     object-fit: cover;
 }
+
